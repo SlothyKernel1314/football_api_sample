@@ -1,5 +1,6 @@
 from scorers import *
 from status import *
+from leagues import *
 
 request_status()
 
@@ -7,7 +8,10 @@ print("-------------------------------------------------------------------------
 print("---------------------------------------------------------------------------------------------------------------")
 print("---------------------------------------------------------------------------------------------------------------")
 
-top_scorers_in_ligue_1_fr_2018()
+# get_top_scorers_in_ligue_1_fr_2018()
+get_top_scorers_in_ligue_1_fr_2019()
+# get_all_leagues()
+get_all_fr_leagues_by_code()
 
 
 
