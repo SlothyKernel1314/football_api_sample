@@ -8,3 +8,11 @@ def request_status():
     url = "https://server1.api-football.com/status"
     response = requests.request("GET", url, headers=HEADERS)
     print(response.text)
+
+
+def get_requests_day_count():
+    url = "https://server1.api-football.com/status"
+    response = requests.request("GET", url, headers=HEADERS)
+    datas = response.json()
+    requests_day_count = datas['api']['status']['requests']
+    return requests_day_count
