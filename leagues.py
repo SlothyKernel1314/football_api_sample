@@ -9,6 +9,13 @@ def get_all_leagues():
     print(datas)
 
 
+def get_league_by_code_and_season(country, season):
+    url = "https://server1.api-football.com/leagues/country/" + country + "/" + season
+    response = requests.request("GET", url, headers=HEADERS)
+    datas = response.json()
+    print(datas)
+
+
 # France
 def get_all_fr_leagues_by_code():
     url = "https://server1.api-football.com/leagues/country/FR"
